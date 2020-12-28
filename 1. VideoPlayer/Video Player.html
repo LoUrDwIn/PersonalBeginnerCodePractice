@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	
+	<body>
+		<div id="testDiv">
+			<video id="myVideo" class="myVideoClass" width="400" controls>
+				<source src="Ragnarok%20Online%20mobile%20Opening%20Animation.mp4" type="video/mp4">
+			</video>
+
+			<button onclick="playPause()">Play/Pause</button>
+			<button onclick="forwardRewind(-10)">Rewind</button>
+			<button onclick="forwardRewind(10)">Fast Forwad</button>
+			<button onclick="stopVideo()">Stop</button>
+
+			<button onclick="makeBig()">Big</button>
+			<button onclick="makeSmall()">Small</button>
+			<button onclick="makeNormal()">Normal</button>
+		</div>
+	</body>
+	
+<!--having problem on calling the element on script as the element is not yet created on DOM == this way all element create on DOM before calling it	-->
+	<script type="text/javascript" src="VideoPlayerScript.js"></script>
+
+</html>
